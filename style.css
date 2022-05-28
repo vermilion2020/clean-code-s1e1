@@ -18,8 +18,10 @@
 }
 
 @media (max-width:768px) {
+
 .scheme-image { text-align: center;
 }
+
 }
 .main-section {
     display: block;
