@@ -12,11 +12,11 @@
     text-align: right;
 }
 
-.scheme-image .img {
+.scheme-image__img {
     width: 100%;
 }
 
-.scheme-image .more-inf {
+.scheme-image__link {
     font-family: fantasy, cursive;
 }
 
@@ -54,7 +54,7 @@ h3 {
     list-style: none;
 }
 
-input,button {
+input, button {
     outline: none;
 }
 
@@ -73,8 +73,13 @@ input,button {
 }
 
 /* Heading */
+.add-element-section {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
 .heading,
-.add-element-section .label {
+.add-element-section__label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -84,7 +89,8 @@ input,button {
     text-transform: uppercase;
 }
 
-.text {
+.task-row-wrapper__new-task,
+.list-item__text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -102,17 +108,17 @@ input,button {
 }
 
 /* New Task */
-.new-task-label {
+.add-element-section__label {
     display: block;
     margin: 0 0 20px;
 }
 
-#new-task {
+.task-row-wrapper__new-task {
     width: 318px;
 }
 
 /* Task list */
-.li {
+.list-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -122,32 +128,31 @@ input,button {
     align-items: center;
 }
 
-.li > * {
+.list-item > * {
     vertical-align: middle;
 }
 
-.li > .checkbox {
+.list-item__checkbox {
     margin: 0 10px;
 }
 
-.li > .label {
+.list-item__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
+}
+
+.list-item__text {
     width: 226px;
 }
 
-.li > .text {
-    width: 226px;
-}
-
-.delete .img {
+.button_delete .img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.delete .img:hover {
+.button_delete .img:hover {
     transform: rotateZ(0);
 }
 
@@ -158,15 +163,15 @@ input,button {
 }
 
 /* Edit Task */
-.li .text {
+.list-item__text {
     display: none
 }
 
-.edit-mode .text {
+.list-item_edit-mode .list-item__text {
     display: inline-block;
     width: 224px;
 }
 
-.edit-mode .label {
+.list-item_edit-mode .list-item__label {
     display: none;
 }
