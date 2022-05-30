@@ -164,7 +164,7 @@ input, button {
 
 /* Edit Task */
 .list-item__text {
-    display: none
+    display: none;
 }
 
 .list-item_edit-mode .list-item__text {
